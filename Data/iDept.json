@@ -1,0 +1,491 @@
+{
+    "iDept": [
+      {
+        "Code": "01",
+        "Title": "崮山",
+        "KeyCode": "gs"
+      },
+      {
+        "Code": "02",
+        "Title": "蓝村",
+        "KeyCode": "lc"
+      },
+      {
+        "Code": "03",
+        "Title": "大道一(已关)",
+        "KeyCode": "dd1"
+      },
+      {
+        "Code": "05",
+        "Title": "西藏一",
+        "KeyCode": "xz1"
+      },
+      {
+        "Code": "06",
+        "Title": "宛平(已关)",
+        "KeyCode": "wp"
+      },
+      {
+        "Code": "07",
+        "Title": "虹桥(已关)",
+        "KeyCode": "hq"
+      },
+      {
+        "Code": "08",
+        "Title": "江苏路长宁1",
+        "KeyCode": "js1"
+      },
+      {
+        "Code": "10",
+        "Title": "打浦",
+        "KeyCode": "dp"
+      },
+      {
+        "Code": "11",
+        "Title": "江苏路延安2",
+        "KeyCode": "js2"
+      },
+      {
+        "Code": "41",
+        "Title": "长寿",
+        "KeyCode": "cs"
+      },
+      {
+        "Code": "13",
+        "Title": "江宁",
+        "KeyCode": "jn"
+      },
+      {
+        "Code": "15",
+        "Title": "曲阳",
+        "KeyCode": "qy"
+      },
+      {
+        "Code": "16",
+        "Title": "海宁",
+        "KeyCode": "hn"
+      },
+      {
+        "Code": "17",
+        "Title": "田林",
+        "KeyCode": "tl"
+      },
+      {
+        "Code": "18",
+        "Title": "水城",
+        "KeyCode": "sc"
+      },
+      {
+        "Code": "19",
+        "Title": "莘庄(已关)",
+        "KeyCode": "xz"
+      },
+      {
+        "Code": "20",
+        "Title": "肇嘉浜",
+        "KeyCode": "zjb"
+      },
+      {
+        "Code": "21",
+        "Title": "松江中山中路1",
+        "KeyCode": "sj1"
+      },
+      {
+        "Code": "22",
+        "Title": "普雄",
+        "KeyCode": "px"
+      },
+      {
+        "Code": "23",
+        "Title": "华灵",
+        "KeyCode": "dh"
+      },
+      {
+        "Code": "25",
+        "Title": "蒲汇塘",
+        "KeyCode": "pht"
+      },
+      {
+        "Code": "27",
+        "Title": "临汾",
+        "KeyCode": "lf"
+      },
+      {
+        "Code": "28",
+        "Title": "凉城一",
+        "KeyCode": "lc1"
+      },
+      {
+        "Code": "29",
+        "Title": "宜川",
+        "KeyCode": "yc"
+      },
+      {
+        "Code": "30",
+        "Title": "武夷(已关)",
+        "KeyCode": "wy"
+      },
+      {
+        "Code": "31",
+        "Title": "闻喜（已关）"
+      },
+      {
+        "Code": "32",
+        "Title": "澳门(已关)",
+        "KeyCode": "am"
+      },
+      {
+        "Code": "33",
+        "Title": "中原",
+        "KeyCode": "zy"
+      },
+      {
+        "Code": "34",
+        "Title": "徐汇(已关)",
+        "KeyCode": "xjh"
+      },
+      {
+        "Code": "35",
+        "Title": "金山金一东路",
+        "KeyCode": "js1"
+      },
+      {
+        "Code": "36",
+        "Title": "天津(已关)",
+        "KeyCode": "tj"
+      },
+      {
+        "Code": "37",
+        "Title": "青浦",
+        "KeyCode": "qp1"
+      },
+      {
+        "Code": "38",
+        "Title": "沪太",
+        "KeyCode": "ht"
+      },
+      {
+        "Code": "39",
+        "Title": "瞿溪",
+        "KeyCode": "qx"
+      },
+      {
+        "Code": "40",
+        "Title": "岚皋(已关)",
+        "KeyCode": "lg"
+      },
+      {
+        "Code": "42",
+        "Title": "奉贤南奉公路1",
+        "KeyCode": "fx"
+      },
+      {
+        "Code": "43",
+        "Title": "安远(已关)",
+        "KeyCode": "ay"
+      },
+      {
+        "Code": "45",
+        "Title": "昌里",
+        "KeyCode": "cl"
+      },
+      {
+        "Code": "46",
+        "Title": "周浦康沈",
+        "KeyCode": "zp"
+      },
+      {
+        "Code": "47",
+        "Title": "宝山(已关)",
+        "KeyCode": "bs"
+      },
+      {
+        "Code": "48",
+        "Title": "国和",
+        "KeyCode": "gh"
+      },
+      {
+        "Code": "49",
+        "Title": "桃浦(已关)",
+        "KeyCode": "tp"
+      },
+      {
+        "Code": "50",
+        "Title": "西藏二",
+        "KeyCode": "xz2"
+      },
+      {
+        "Code": "51",
+        "Title": "梅花",
+        "KeyCode": "mh"
+      },
+      {
+        "Code": "53",
+        "Title": "延川(已关)",
+        "KeyCode": "yc"
+      },
+      {
+        "Code": "54",
+        "Title": "福山",
+        "KeyCode": "fs"
+      },
+      {
+        "Code": "55",
+        "Title": "凉城",
+        "KeyCode": "lc2"
+      },
+      {
+        "Code": "56",
+        "Title": "川沙妙境1",
+        "KeyCode": "cs1"
+      },
+      {
+        "Code": "57",
+        "Title": "南汇(已关)",
+        "KeyCode": "nh"
+      },
+      {
+        "Code": "59",
+        "Title": "法华一（已关）",
+        "KeyCode": "fh1"
+      },
+      {
+        "Code": "62",
+        "Title": "丰庄",
+        "KeyCode": "fz"
+      },
+      {
+        "Code": "63",
+        "Title": "南汇南门大街",
+        "KeyCode": "nh"
+      },
+      {
+        "Code": "64",
+        "Title": "松江万达店",
+        "KeyCode": "sj2"
+      },
+      {
+        "Code": "65",
+        "Title": "杨南1",
+        "KeyCode": "sn1"
+      },
+      {
+        "Code": "66",
+        "Title": "莲花",
+        "KeyCode": "lh"
+      },
+      {
+        "Code": "67",
+        "Title": "石泉",
+        "KeyCode": "sq"
+      },
+      {
+        "Code": "68",
+        "Title": "金山卫零2",
+        "KeyCode": "js2"
+      },
+      {
+        "Code": "69",
+        "Title": "凯旋(已关)",
+        "KeyCode": "kx"
+      },
+      {
+        "Code": "70",
+        "Title": "崂山1",
+        "KeyCode": "ls1"
+      },
+      {
+        "Code": "88",
+        "Title": "天钥桥",
+        "KeyCode": "tyq"
+      },
+      {
+        "Code": "801",
+        "Title": "飞虹"
+      },
+      {
+        "Code": "802",
+        "Title": "遵义(已关)",
+        "KeyCode": "zy"
+      },
+      {
+        "Code": "901",
+        "Title": "总裁办",
+        "KeyCode": "zjb"
+      },
+      {
+        "Code": "902",
+        "Title": "总经办",
+        "KeyCode": "zcb"
+      },
+      {
+        "Code": "903",
+        "Title": "人事",
+        "KeyCode": "rs"
+      },
+      {
+        "Code": "904",
+        "Title": "采购（供销）",
+        "KeyCode": "cg"
+      },
+      {
+        "Code": "905",
+        "Title": "企划",
+        "KeyCode": "qh"
+      },
+      {
+        "Code": "906",
+        "Title": "协调",
+        "KeyCode": "xt"
+      },
+      {
+        "Code": "907",
+        "Title": "车队",
+        "KeyCode": "cd"
+      },
+      {
+        "Code": "908",
+        "Title": "监察",
+        "KeyCode": "jc"
+      },
+      {
+        "Code": "909",
+        "Title": "审计",
+        "KeyCode": "sj"
+      },
+      {
+        "Code": "910",
+        "Title": "财务一部",
+        "KeyCode": "cw1"
+      },
+      {
+        "Code": "911",
+        "Title": "财务二部",
+        "KeyCode": "cw2"
+      },
+      {
+        "Code": "912",
+        "Title": "IT",
+        "KeyCode": "it"
+      },
+      {
+        "Code": "913",
+        "Title": "开发",
+        "KeyCode": "kf"
+      },
+      {
+        "Code": "914",
+        "Title": "投诉",
+        "KeyCode": "ts"
+      },
+      {
+        "Code": "915",
+        "Title": "工程",
+        "KeyCode": "gc"
+      },
+      {
+        "Code": "916",
+        "Title": "学校",
+        "KeyCode": "xx"
+      },
+      {
+        "Code": "917",
+        "Title": "药厂",
+        "KeyCode": "yc"
+      },
+      {
+        "Code": "918",
+        "Title": "营销",
+        "KeyCode": "yx"
+      },
+      {
+        "Code": "919",
+        "Title": "物流",
+        "KeyCode": "wl"
+      },
+      {
+        "Code": "71",
+        "Title": "定溪",
+        "KeyCode": "dx"
+      },
+      {
+        "Code": "72",
+        "Title": "银都",
+        "KeyCode": "yd"
+      },
+      {
+        "Code": "73",
+        "Title": "莘朱",
+        "KeyCode": "xz"
+      },
+      {
+        "Code": "921",
+        "Title": "王英店"
+      },
+      {
+        "Code": "74",
+        "Title": "北京今典花园1",
+        "KeyCode": "bj1"
+      },
+      {
+        "Code": "75",
+        "Title": "北京劲松2",
+        "KeyCode": "bj2"
+      },
+      {
+        "Code": "76",
+        "Title": "北京万柳东路3",
+        "KeyCode": "bj3"
+      },
+      {
+        "Code": "78",
+        "Title": "北京安慧北里5",
+        "KeyCode": "bj5"
+      },
+      {
+        "Code": "fh77",
+        "Title": "飞虹(已关)",
+        "KeyCode": "fh"
+      },
+      {
+        "Code": "lx76",
+        "Title": "兰溪",
+        "KeyCode": "lx"
+      },
+      {
+        "Code": "s75",
+        "Title": "法华2",
+        "KeyCode": "fh2"
+      },
+      {
+        "Code": "81",
+        "Title": "颛兴(已关)",
+        "KeyCode": "zx"
+      },
+      {
+        "Code": "82",
+        "Title": "水清(已关)",
+        "KeyCode": "sq"
+      },
+      {
+        "Code": "83",
+        "Title": "牡丹江",
+        "KeyCode": "mdj"
+      },
+      {
+        "Code": "86",
+        "Title": "张江高斯",
+        "KeyCode": "zj"
+      },
+      {
+        "Code": "87",
+        "Title": "顾戴",
+        "KeyCode": "gd"
+      },
+      {
+        "Code": "89",
+        "Title": "古美1",
+        "KeyCode": "gm1"
+      }
+    ]
+}

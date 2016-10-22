@@ -1,0 +1,17 @@
+/*@keyframes change-color{
+	from{
+		background: #fff;
+	}
+	to{
+		background: #ddd;
+	}
+}
+
+.new-record {
+	animation: change-color 1s;
+	animation-fill-mode: both;
+}*/
+
+.new-record {
+	background: #ddd;
+}

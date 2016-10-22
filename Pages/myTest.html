@@ -1,0 +1,115 @@
+﻿<html>
+<head>
+    <title>test</title>
+    <script type="text/javascript">
+        function checkNum(obj,str) {
+            var re = /^[1-9]\d*$/;
+            if (!re.test(obj.value)) {
+                alert(str+"必须为正整数!");
+                obj.value = "";
+                obj.focus();
+                return false;
+            }
+            return true;
+        }
+        function checkInt(obj, str) {
+            var re = /^\d+$/;
+            if (!re.test(obj.value)) {
+                alert(str + "必须为整数!");
+                obj.value = "";
+                obj.focus();
+                return false;
+            }
+            return true;
+        }
+        function checkTime(obj,str) {
+            var re = /^(\d{4})\-(\d{2})\-(\d{2}) (\d{2}):(\d{2}):(\d{2})$/;
+            if (!re.test(obj.value)) {
+                alert(str + "必须为日期格式!");
+                obj.value = "";
+                obj.focus();
+                return false;
+            }
+            return true;
+        }
+        function btnClick() {
+            var deptID = document.getElementById("deptID");
+            if (!checkNum(deptID,"部门ID")) {
+                return;
+            }
+            var empID = document.getElementById("empID");
+            if (!checkNum(empID, "员工ID")) {
+                return;
+            }
+            var checkinTime = document.getElementById("checkinTime");
+            if (!checkTime(checkinTime, "签到时间")) {
+                return;
+            }
+            var uploadFile = document.getElementById("uploadFile");
+            var ExpandName = uploadFile.value.indexOf(".jpg");
+            if (ExpandName < 0) {
+                alert("图片必须为jpg格式！");
+                return;
+            }
+            var timeSource = document.getElementById("timeSource");
+            if (!checkInt(timeSource, "时间来源")) {
+                return;
+            } else if (timeSource.value < 0 || timeSource.value > 3) {
+                alert("时间来源必须为0~3之间的整数！")
+                return;
+            }
+            var myFrm = document.getElementById("myFrm");
+            myFrm.submit();
+        }
+        
+        </script>
+<style>
+    .fontRed{color:#F00}
+</style>  
+	 
+
+</head>
+
+<body>
+<form action="../Apis/MyTest1.aspx" method="post" id="myFrm" name="myFrm" enctype ="multipart/form-data" >
+    <table>
+        <tr>
+            <td>部门ID</td>
+            <td><input name="deptID" id="deptID" type="text"/></td>
+        </tr>
+        <tr>
+            <td>员工ID</td>
+            <td><input name="empID" id="empID" type="text"/></td>
+        </tr>
+        <tr>
+            <td>签到时间</td>
+            <td><input name="checkinTime" id="checkinTime" type="text"/></td>
+            <td class="fontRed">*   时间格式YYYY-MM-DD HH:MM:SS</td>
+        </tr>
+        <tr>
+            <td>文件</td>
+            <td><input name="uploadFile" id="uploadFile" type="file" /></td>
+            <td class="fontRed">*   选择.jpg格式文件</td>
+        </tr>
+        <tr>
+            <td>录入方式</td>
+            <td><input name="recordMode" id="recordMode" value="0" readonly=true type="text"/></td>
+        </tr>
+        <tr>
+            <td>时间来源</td>
+            <td><input name="timeSource" id="timeSource" type="text"/></td>
+            <td class="fontRed">*   0:未知 1:电脑本机时间 2:服务器时间  3:百度时间</td>
+        </tr>
+        <tr>
+            <td>密钥</td>
+            <td><input name="sKey" id="sKey" value="123456" readonly=true type="text"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="btnOK" value="提交" onclick="btnClick()"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+
+</html>
+	

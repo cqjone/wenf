@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>文峰Web管理系统-后台登录</title>
+<style type="text/css">
+<!--
+*{margin:0px;padding:0px;border:0px;}
+html,body {
+	background-color: #dfe8f7;
+	height:auto;
+}
+#bg {
+    position: absolute;
+	background-color: #FFFFFF;
+	height: 500px;
+	width: 925px;
+    left:50%;
+	top:50%;
+	margin-left:-462px;
+	margin-top:-250px;
+}
+.inputc {
+	height: 20px;
+	border: 1px solid #b5b9c5;
+	color: #000000;
+	line-height: 20px;
+	width: 160px;
+	background-image: url(../Imgs/inputc.jpg);
+	background-repeat: repeat-x;
+}
+.btn-submit
+{
+	background-image: url(../Imgs/btn.jpg);
+	background-repeat: no-repeat;
+	height:54px;
+	width: 66px;
+    cursor:pointer;
+}
+
+#showMsg
+{
+	color: red;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom:-10px;
+}
+
+.STYLE2 {
+	color: #154488;
+	font-size: 12px;
+	font-family: "宋体";
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="bg">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><img src="../Imgs/bgt.jpg" width="925" /></td>
+    </tr>
+    <tr>
+      <td height="454" align="center" valign="top" background="../Imgs/bg.jpg">
+	  <table width="912" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="70">&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="90" align="center"><img src="../Imgs/logo.jpg" width="392" height="72" /></td>
+        </tr>
+        <tr>
+          <td>
+		  <table width="913" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+		  <td width="1" ></td>
+          <td width="20" height="136"><img src="../Imgs/ml.jpg" width="20" height="136" 
+
+/></td>
+          <td valign="top" background="../Imgs/bgm.jpg" >
+		  <table width="870" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="32">&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td><div id="showMsg"></div></td>
+              <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="290">&nbsp;</td>
+              <td width="16"><img src="../Imgs/008.gif" width="16" height="16" /></td>
+              <td width="50" height="30" align="center"><span class="STYLE2">用户名：</span></td>
+              <td width="162"><input type="text" name="userName" id="userName" class="inputc" tabindex="1" /></td>
+              <td width="76" rowspan="2" align="center" valign="middle"><button type="submit" class="btn-submit"  
+
+onmouseout="this.className='btn-submit'" id="logon_button" name="logon_button" onclick="doLogin();">
+
+</button></td>
+			  <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><img src="../Imgs/391.gif" width="16" height="16" /></td>
+              <td height="30" align="center" class="STYLE2">密　码：</td>
+              <td><input type="password" name="passwd" id="passwd" class="inputc" tabindex="2" /></td>
+              <td>&nbsp;</td>
+            </tr>
+			 <tr>
+              <td>&nbsp;</td>
+              <td></td>
+              <td height="30" align="center" class="STYLE2"> </td>
+              <td></td>
+              <td>&nbsp;</td>
+            </tr>
+          </table></td>
+          <td width="20"><img src="../Imgs/mr.jpg" width="20" height="136" /></td>
+        </tr>
+      </table>
+	  </td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td><img src="../Imgs/bgb.jpg" width="925" height="23" /></td>
+    </tr>
+  </table>
+</div>
+<script type="text/javascript" src="../JS/md5.js"></script>
+<script type="text/javascript" src="../JS/jquery-1.5.1.min.js"></script>
+<script type="text/javascript">
+	$('#userName').keyup(function(e){
+		if(e.which==13){
+			$('#passwd').focus();
+		}
+	});
+	$('#passwd').keyup(function(e){
+		if(e.which==13){
+			doLogin();
+		}
+	});
+    var isLoging = false;
+    function doLogin() {
+        if(isLoging){
+            //正在登录。。。。
+            return;
+        }else{
+            isLoging = true;
+        var userName = $.trim($("#userName").val());
+        var passwd = $.trim($("#passwd").val());
+       
+        if (userName.length == 0) {
+            alert("请输入用户名！");
+            isLoging = false;
+			$('#userName').focus();
+            return;
+        }
+        if (passwd.length == 0) {
+            alert("请输入密码！");
+            isLoging = false;
+			$('#passwd').focus();
+            return;
+        }
+        
+
+        $("#logon_button").attr("disabled", "disabled");
+        $("#showMsg").html("正在登录.....");
+        $.ajax({
+            url: "../Apis/AuthLogin.aspx?actionName=managerLogin",
+            data: "loginName=" + userName + "&PassWord=" + passwd,
+            type:"post",
+            //dataType:"json",
+            success: function (response) {
+                //alert(response.success);return;
+                eval("data="+response);
+                if(data.success){
+                    //登陆成功
+                    $("#showMsg").html("登录成功,正在跳转....");
+
+                    //跳转 
+                    location.href = "index.htm?sid=" + data.msg;
+                }else{
+                    alert(data.msg);
+                    $("#showMsg").html("");
+                    $("#logon_button").attr("disabled", "");
+                    isLoging = false;
+                }
+            },
+            error: function (response) {
+                alert("服务器错误!");
+                $("#showMsg").html("");
+                $("#logon_button").attr("disabled", "");
+                isLoging = false;
+            }
+        });
+            isLoging = false;
+        }
+    }
+</script>
+<!--<script type="text/javascript" src="../JS/Extjs/ext-all-debug.js"></script>-->
+</body>
+</html>

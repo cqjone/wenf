@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AuthGroup.aspx.cs" Inherits="BeautyPointWeb.Apis.AuthGroup" %>

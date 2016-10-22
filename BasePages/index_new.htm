@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>文峰美容美发积分管理系统</title>
+
+   <!-- <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />-->
+    
+    <link rel="stylesheet" type="text/css" href="../JS/Extjs/resources/css/ext-all.css" />
+    
+    <link rel="stylesheet" type="text/css" href="../JS/Extjs/examples/shared/icons/silk.css" />
+    <link rel="Stylesheet" type="text/css" href="../JS/Extjs/fileuploadfield.css" />
+    
+    <script type="text/javascript" src="../JS/Extjs/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="../JS/Extjs/ext-all-debug.js"></script>
+    <script type="text/javascript" src="../JS/Extjs/FileUploadField.js"></script>
+        
+    <!--中文-->
+    <script type="text/javascript" src="../JS/Extjs/src/locale/ext-lang-zh_CN.js" charset="utf-8"></script>
+    
+    <!--工具-->
+    <script type="text/javascript" src="../JS/Util.js"></script>
+    
+    <!--系统-->
+    <script type="text/javascript" src="../JS/Sys.js"></script>
+    
+    <!--公用控件-->
+    
+    
+    <script type="text/javascript">
+        Ext.BLANK_IMAGE_URL = '../JS/Extjs/resources/images/default/s.gif';
+
+        var sid = Sys.sid;
+        if(sid == undefined || sid==""){
+            //Ext.Msg.alert("请先登录！");
+            //alert("请先登录！");
+            //document.location = "LoginPage.htm";
+            //return;
+        }
+        //document.write("<input type='hidden' id='sid' name='sid' value='" + sid +"' />");
+            
+    </script>
+    
+    
+    <!--初始化界面-->
+    <!--<script type="text/javascript" src="../JS/Init.js" ></script>-->
+    
+    <style type="text/css">
+<!--
+*{margin:0px;padding:0px;border:0px;}
+#header_bg {
+	width:100%;
+	height:64px;
+	background-image: url(../Imgs/topmiddle.jpg);
+	background-repeat: repeat-x;
+	width:expression(document.body.clientWidth <= 854? "854px": "auto" );
+	min-width:854px;
+	}
+#header_left{
+    width:320px;
+    height:64px;
+    background-image: url(../Imgs/topleft.jpg);
+	background-repeat: no-repeat;
+	float:left;
+	}
+#header_rig{
+    width:534px;
+    height:64px;
+    background-image: url(../Imgs/topright.jpg);
+	background-repeat: no-repeat;
+	float:right;}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="../JS/Extjs/ux/ColumnHeaderGroup.css" />
+<script type="text/javascript" src="../JS/Extjs/ux/ColumnHeaderGroup.js"></script>
+<!-- extensions --> 
+    <script type="text/javascript" src="../JS/Extjs/ux/GroupTabPanel.js"></script> 
+    <script type="text/javascript" src="../JS/Extjs/ux/GroupTab.js"></script> 
+ 
+    <script type="text/javascript" src="../JS/Extjs/ux/Portal.js"></script> 
+    <script type="text/javascript" src="../JS/Extjs/ux/PortalColumn.js"></script> 
+    <script type="text/javascript" src="../JS/Extjs/ux/Portlet.js"></script>
+
+
+<script type="text/javascript">
+    Ext.onReady(function () {
+        Ext.QuickTips.init();
+
+        // create some portlet tools using built in Ext tool ids
+        var tools = [{
+            id: 'gear',
+            handler: function () {
+                Ext.Msg.alert('Message', 'The Settings tool was clicked.');
+            }
+        }, {
+            id: 'close',
+            handler: function (e, target, panel) {
+                panel.ownerCt.remove(panel, true);
+            }
+        }];
+
+        var viewport = new Ext.Viewport({
+            layout: 'fit',
+            items: [{
+                xtype: 'grouptabpanel',
+                tabWidth: 130,
+                activeGroup: 0,
+                items: [{
+                    mainItem: 1,
+                    items: [{
+                        title: 'Tickets',
+                        layout: 'fit',
+                        iconCls: 'x-icon-tickets',
+                        tabTip: 'Tickets tabtip',
+                        style: 'padding: 10px;',
+                        items: [{}]
+                    },
+                {
+                    xtype: 'portal',
+                    title: 'Dashboard',
+                    tabTip: 'Dashboard tabtip',
+                    items: [{
+                        columnWidth: .33,
+                        style: 'padding:10px 0 10px 10px',
+                        items: [{
+                            title: 'Grid in a Portlet',
+                            layout: 'fit',
+                            tools: tools,
+                            items: [{}]
+                        }, {
+                            title: 'Another Panel 1',
+                            tools: tools,
+                            html: ""
+                        }]
+                    }, {
+                        columnWidth: .33,
+                        style: 'padding:10px 0 10px 10px',
+                        items: [{
+                            title: 'Panel 2',
+                            tools: tools,
+                            html:""
+                        }, {
+                            title: 'Another Panel 2',
+                            tools: tools,
+                            html:""
+                        }]
+                    }, {
+                        columnWidth: .33,
+                        style: 'padding:10px',
+                        items: [{
+                            title: 'Panel 3',
+                            tools: tools,
+                            html:""
+                        }, {
+                            title: 'Another Panel 3',
+                            tools: tools,
+                            html:""
+                        }]
+                    }]
+                }, {
+                    title: 'Subscriptions',
+                    iconCls: 'x-icon-subscriptions',
+                    tabTip: 'Subscriptions tabtip',
+                    style: 'padding: 10px;',
+                    layout: 'fit',
+                    items: [{
+                        xtype: 'tabpanel',
+                        activeTab: 1,
+                        items: [{
+                            title: 'Nested Tabs',
+                            html:""
+                        }]
+                    }]
+                }, {
+                    title: 'Users',
+                    iconCls: 'x-icon-users',
+                    tabTip: 'Users tabtip',
+                    style: 'padding: 10px;',
+                    html:""
+                }]
+                }, {
+                    expanded: true,
+                    items: [{
+                        title: 'Configuration',
+                        iconCls: 'x-icon-configuration',
+                        tabTip: 'Configuration tabtip',
+                        style: 'padding: 10px;',
+                        html:""
+                    }, {
+                        title: 'Email Templates',
+                        iconCls: 'x-icon-templates',
+                        tabTip: 'Templates tabtip',
+                        style: 'padding: 10px;',
+                        html:""
+                    }]
+                }]
+            }]
+        });
+    });
+</script>
+
+</head>
+<body>
+</html>

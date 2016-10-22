@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <title>文峰Web管理系统</title>
+
+   <!--<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />-->
+
+    <link rel="stylesheet" type="text/css" href="../JS/Extjs/resources/css/ext-all.css" />
+    <link rel="Stylesheet" type="text/css" href="../JS/Extjs/resources/css/xtheme-gray.css" />
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="../JS/Extjs/icons/silk.css" />
+    <link rel="Stylesheet" type="text/css" href="../JS/Extjs/fileuploadfield.css" />
+    <link rel="Stylesheet" type="text/css" href="../JS/Extjs/ux/GroupSummary.css" />
+
+    <script type="text/javascript" src="../JS/Extjs/adapter/ext/ext-base.js"></script>
+
+    <script type="text/javascript" src="../JS/Extjs/ext-all-debug.js"></script>
+    <script type="text/javascript" src="../JS/Extjs/FileUploadField.js"></script>
+
+
+
+    <!--中文-->
+    <script type="text/javascript" src="../JS/Extjs/src/locale/ext-lang-zh_CN.js" charset="utf-8"></script>
+
+    <!--工具-->
+    <script type="text/javascript" src="../JS/Util.js"></script>
+    <script type="text/javascript" src="../JS/md5.js"></script>
+
+    <!--系统-->
+    <script type="text/javascript" src="../JS/Sys.js" charset="utf-8"></script>
+
+    <!--公用控件-->
+    <script type="text/javascript" src="../JS/ComCt.js"></script>
+    <script type="text/javascript" src="../JS/ComData.js"></script>
+
+    <!--积分开户-->
+    <script type="text/javascript" src="../JS/BackEnd/PointAccountAdd.js"></script>
+
+    <!-- 远程绑定卡 -->
+    <script type="text/javascript" src="../JS/BackEnd/RemoteBindCard.js"></script>
+
+	<!--积分开户-->
+
+
+    <script type="text/javascript">
+        Ext.BLANK_IMAGE_URL = '../JS/Extjs/resources/images/default/s.gif';
+
+        var sid = Sys.sid;
+        //alert(getParameter("sid"));
+        if(sid == undefined || sid==""){
+            Ext.Msg.alert("请先登录！");
+            //alert("请先登录！");
+            document.location = "login_front.htm";
+            //return;
+        }
+        //document.write("<input type='hidden' id='sid' name='sid' value='" + sid +"' />");
+
+
+        //document.oncontextmenu = function () { return false; }
+
+
+        //定时执行keeponline
+
+        function keepOnline(){
+            if (sid == undefined) {
+                return;
+            }
+
+            Ext.Ajax.request({
+                url: "../Apis/AuthLogin.aspx?actionName=keepOnline",
+                params:{sid:sid}
+            });
+
+            setTimeout(keepOnline,1000000);
+        }
+
+        keepOnline();
+
+        function getUserInfo() {
+            Ext.Ajax.request({
+                url: "../Apis/AuthLogin.aspx?actionName=getCurrentUser&sid="+Sys.sid,
+                success: function (res) {
+                    var data = Ext.util.JSON.decode(res.responseText);
+                    if (data) {
+                        document.getElementById("DeptID").value = data.DeptID;
+                        document.getElementById("DeptName").value = data.DeptName;
+                    }
+                }
+
+            });
+        }
+
+        function Exit() {
+            Ext.Msg.confirm('提示', '确定退出？', function (btn) {
+                if (btn == 'yes') {
+                    window.location.href = 'login_end.html';
+                }
+            });
+        }
+
+        Ext.data.Store.prototype.applySort = function () {        //重载 applySort
+			if(this.sortInfo && !this.remoteSort){
+				var s = this.sortInfo, f = s.field;
+				var st = this.fields.get(f).sortType;
+				var fn = function(r1, r2){
+					var v1 = st(r1.data[f]), v2 = st(r2.data[f]);
+					if(typeof(v1) == "string"){ //若为字符串类型，
+						return v1.localeCompare(v2);
+					}
+					return v1 > v2 ? 1 : (v1 < v2 ? -1 : 0);
+				}
+				this.data.sort(s.direction, fn);
+				if(this.snapshot && this.snapshot != this.data){   //数据快照
+					this.snapshot.sort(s.direction, fn);
+				}
+			}
+		}
+         //修复办法，谷歌浏览器中,table的单元格实际宽度=指定宽度+padding，所以只要重写gridview里的一个方法：
+            Ext.override(Ext.grid.GridView,{
+		    getColumnStyle : function(colIndex, isHeader) {
+			    var colModel  = this.cm,
+				    colConfig = colModel.config,
+				    style     = isHeader ? '' : colConfig[colIndex].css || '',
+				    align     = colConfig[colIndex].align;
+			    if(Ext.isChrome){
+				    style += String.format("width: {0};", parseInt(this.getColumnWidth(colIndex))-4+'px');
+			    }else{
+				    style += String.format("width: {0};", this.getColumnWidth(colIndex));
+			    }
+			    if (colModel.isHidden(colIndex)) {
+				    style += 'display: none; ';
+			    }
+			    if (align) {
+				    style += String.format("text-align: {0};", align);
+			    }
+			    return style;
+		    }
+	    })
+    </script>
+
+    <!--初始化界面-->
+<!-- <script type="text/javascript" src="../JS/Extjs/ux/GridSummary.js"></script> -->
+
+
+
+<script type="text/javascript" src="../JS/Init.js" ></script>
+
+<style type="text/css">
+<!--
+*{margin:0px;padding:0px;border:0px;}
+#header_bg {
+	width:100%;
+	height:64px;
+	background-image: url(../Imgs/topmiddle.jpg);
+	background-repeat: repeat-x;
+	width:expression(document.body.clientWidth <= 854? "854px": "auto" );
+	min-width:854px;
+	}
+#header_left{
+    width:320px;
+    height:64px;
+    background-image: url(../Imgs/topleft.jpg);
+	background-repeat: no-repeat;
+	float:left;
+	}
+#header_rig{
+    width:534px;
+    height:64px;
+    background-image: url(../Imgs/topright.jpg);
+	background-repeat: no-repeat;
+	float:right;}
+-->
+.x-grid3-row-alt{
+	background-color:#eeeeee;
+}
+
+
+.x-grid-back-bai {
+    background-color: #CBCBCB !important;
+}
+ .x-grid-back-ban {
+    background-color: #0Dbb61 !important;
+}
+ .x-grid-back-xiu {
+    background-color: #CBCBCB !important;
+}
+ .x-grid-back-jia {
+    background-color: #C05046 !important;
+}
+ .x-grid-back-wpb{
+    background-color: #DADADA !important;
+}
+ .x-grid-back-qq{
+    background-color: #4BACC6 !important;
+}
+
+.x-grid-back-tong{
+    background-color: #CF3 !important;
+}
+
+
+.x-grid-back-zhong{
+    background-color: #8000FF !important;
+}
+
+.x-grid-back-pei{
+    background-color: #F0F !important;
+}
+
+.x-grid3-locked {
+	overflow: hidden;
+	position: absolute;
+	vertical-align:middle;
+}
+
+.x-grid3-unlocked{
+	overflow: hidden;
+	position: absolute;
+	vertical-align:middle;
+}
+
+.x-grid3-locked {
+	border-right: 1px solid #99BBE8;
+	vertical-align:middle;
+}
+
+.x-grid3-locked .x-grid3-scroller {
+	overflow: hidden;
+	vertical-align:middle;
+}
+
+.x-grid3-locked .x-grid3-row {
+	border-right: 0;
+	vertical-align:middle;
+}
+
+.x-grid3-scroll-spacer {
+	height: 19px;
+}
+
+.x-grid3-unlocked .x-grid3-header-offset {
+	padding-left: 0;
+}
+
+.x-grid3-unlocked .x-grid3-row {
+	border-left: 0;
+}
+.x-grid3-col-Title{
+vertical-align:middle;
+}
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="../JS/Extjs/ux/ColumnHeaderGroup.css" />
+<script type="text/javascript" src="../JS/Extjs/ux/ColumnHeaderGroup.js"></script>
+<script type="text/javascript" src="../JS/Extjs/ux/LockingGridView.js"></script>
+</head>
+<body >
+	<div id="north">
+		<!--<div id="header_bg">
+			<div id="header_left"></div>
+			<div id="header_rig"></div>
+		</div>-->
+	</div>
+
+    <div id="west">
+    </div>
+
+    <div id="center">
+    </div>
+
+    <div id="south">
+        <input type="hidden" id="DeptID" /><!--当前操作者门店id-->
+        <input type="hidden" id="DeptName" /><!--当前操作者门店-->
+    </div>
+
+    <div id="east" >
+	</div>
+
+
+</body>
+
+</html>

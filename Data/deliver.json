@@ -1,0 +1,51 @@
+{
+	"invoice":[
+
+		{   
+			"store":"静安店",
+			"no" : "a1",
+			"data":[
+				{"cate": "美容", "name": "欧莱雅美白霜", "size": "白色", "company": "支", "number": 12, "code": 1111111111111,"coding":"z01"},
+				{"cate": "美容", "name": "兰蔻小黑瓶", "size": "黑色", "company": "瓶", "number": 32, "code": 1331234567314,"coding":"b02"},
+				{"cate": "美容", "name": "only玉兰油", "size": "黑色", "company": "支", "number": 64, "code": 9364382839534,"coding":"c03"},
+				{"cate": "美容", "name": "相宜本草面膜", "size": "白色", "company": "张", "number": 1000, "code": 9638427145728,"coding":"d04"},
+				{"cate": "护理", "name": "欧莱雅护发素", "size": "红色", "company": "瓶", "number": 29, "code": 6572893762781,"coding":"e05"},
+				{"cate": "养生", "name": "碧生源", "size": "黄色", "company": "盒", "number": 45, "code": 7683658463728,"coding":"f06"},
+				{"cate": "日常", "name": "清风", "size": "白色", "company": "包", "number": 48, "code": 6573897256340,"coding":"g07"},
+				{"cate": "卫生", "name": "杰宝", "size": "白色", "company": "包", "number": 32, "code": 3748920394582,"coding":"h08"},
+				{"cate": "数码", "name": "佳能照相机", "size": "白色", "company": "部", "number": 1, "code": 2263421782934, "recode": "9763275638693721785","coding":"i10"},
+				{"cate": "数码", "name": "佳能照相机", "size": "白色", "company": "部", "number": 1, "code": 2263421782934, "recode": "9963275638693721785","coding":"i10"}
+			]
+		},
+		{
+			"store":"普陀店",
+			"no" : "a2",
+			"data":[
+				{"cate": "美容", "name": "1", "size": "白色", "company": "支", "number": 12, "code": 3648212394231,"coding":"a01"},
+				{"cate": "美容", "name": "2", "size": "黑色", "company": "瓶", "number": 32, "code": 1331234567314,"coding":"b02"},
+				{"cate": "美容", "name": "3", "size": "黑色", "company": "支", "number": 64, "code": 9364382839534,"coding":"c03"},
+				{"cate": "美容", "name": "4", "size": "白色", "company": "张", "number": 1000, "code": 9638427145728,"coding":"d04"},
+				{"cate": "护理", "name": "5", "size": "红色", "company": "瓶", "number": 29, "code": 6572893762781,"coding":"e05"},
+				{"cate": "养生", "name": "6", "size": "黄色", "company": "盒", "number": 45, "code": 7683658463728,"coding":"f06"},
+				{"cate": "日常", "name": "7", "size": "白色", "company": "包", "number": 48, "code": 6573897256340,"coding":"g07"},
+				{"cate": "卫生", "name": "8", "size": "白色", "company": "包", "number": 32, "code": 3748920394582,"coding":"h08"},
+				{"cate": "数码", "name": "9", "size": "白色", "company": "部", "number": 1,  "code": 2263421782934, "recode": "9763275638693721786","coding":"i09"}
+			]
+		},
+		{   
+			"store":"闵行店",
+			"no" : "a3",
+			"data":[
+				{"cate": "美容", "name": "欧莱雅美白霜", "size": "白色", "company": "支", "number": 12, "code": 4648212394231,"coding":"a01"},
+				{"cate": "美容", "name": "兰蔻小黑瓶", "size": "黑色", "company": "瓶", "number": 32, "code": 1331234567314,"coding":"b02"},
+				{"cate": "美容", "name": "only玉兰油", "size": "黑色", "company": "支", "number": 64, "code": 9364382839534,"coding":"c03"},
+				{"cate": "美容", "name": "相宜本草面膜", "size": "白色", "company": "张", "number": 1000, "code": 9638427145728,"coding":"d04"},
+				{"cate": "护理", "name": "欧莱雅护发素", "size": "红色", "company": "瓶", "number": 29, "code": 6572893762781,"coding":"e05"},
+				{"cate": "养生", "name": "碧生源", "size": "黄色", "company": "盒", "number": 45, "code": 7683658463728,"coding":"f06"},
+				{"cate": "日常", "name": "清风", "size": "白色", "company": "包", "number": 48, "code": 6573897256340,"coding":"g07"},
+				{"cate": "卫生", "name": "杰宝", "size": "白色", "company": "包", "number": 32, "code": 3748920394582,"coding":"h08"},
+				{"cate": "数码", "name": "佳能照相机", "size": "白色", "company": "部", "number": 1, "code": 2263421782934, "recode": "97632756386937217858","coding":"i09"}
+			]
+		}		
+	]
+}

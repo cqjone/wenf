@@ -1,0 +1,38 @@
+{
+    "allStore": [
+      {"StoreName":"迪士尼店",//门店名称
+      "District":"上海",//门店所在地区
+      "AreaID":"1",//门店所在地区代号
+      "TempName":""//门店使用的模板名称
+      },
+      {"StoreName":"祁连山路店","District":"上海","AreaID":"1","TempName":""},
+      {"StoreName":"普陀店","District":"北京","AreaID":"2","TempName":""},
+      {"StoreName":"徐汇店","District":"山东","AreaID":"3","TempName":""},
+      {"StoreName":"金山店","District":"北京","AreaID":"2","TempName":""},
+      {"StoreName":"浦东店","District":"山东","AreaID":"3","TempName":""},
+      {"StoreName":"宝山店","District":"深圳","AreaID":"4","TempName":""},
+      {"StoreName":"桃浦店","District":"上海","AreaID":"1","TempName":""},
+      {"StoreName":"曹杨路店","District":"深圳","AreaID":"4","TempName":""},
+      {"StoreName":"假定店","District":"北京","AreaID":"2","TempName":""},
+      {"StoreName":"松江店","District":"深圳","AreaID":"4","TempName":""},
+      {"StoreName":"闵行店","District":"山东","AreaID":"3","TempName":""},
+      {"StoreName":"虹桥店","District":"厦门","AreaID":"5","TempName":""},
+      {"StoreName":"南翔店","District":"深圳","AreaID":"4","TempName":""},
+      {"StoreName":"复旦店","District":"厦门","AreaID":"5","TempName":""},
+      {"StoreName":"静安店","District":"北京","AreaID":"2","TempName":""},
+      {"StoreName":"安亭店","District":"山东","AreaID":"3","TempName":""},
+      {"StoreName":"花桥店","District":"江苏","AreaID":"6","TempName":""},
+      {"StoreName":"马陆店","District":"江苏","AreaID":"6","TempName":""},
+      {"StoreName":"人民广场店","District":"北京","AreaID":"2","TempName":""},
+      {"StoreName":"东方明珠店","District":"山东","AreaID":"3","TempName":""},
+      {"StoreName":"长宁店","District":"深圳","AreaID":"4","TempName":""}
+    ],
+    "District": [////门店所在地区
+      {"District":"上海"},
+      {"District":"北京"},
+      {"District":"山东"},
+      {"District":"深圳"},
+      {"District":"厦门"},
+      {"District":"江苏"}
+    ]
+}

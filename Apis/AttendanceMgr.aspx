@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AttendanceMgr.aspx.cs" Inherits="BeautyPointWeb.Apis.AttendanceMgr" %>

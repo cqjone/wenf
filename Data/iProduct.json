@@ -1,0 +1,693 @@
+{
+    "iProduct": [
+      {
+        "Code": "C00001",
+        "Title": "欧莱雅染膏",
+        "ProductType": "美发",
+        "Unit": "支",
+        "Spec": "50ml"
+      },
+      {
+        "Code": "C00002",
+        "Title": "欧莱雅对比色",
+        "ProductType": "美发",
+        "Unit": "支",
+        "Spec": "50ml"
+      },
+      {
+        "Code": "C00004",
+        "Title": "欧莱雅双氧奶",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "1000ml"
+      },
+      {
+        "Code": "C00005",
+        "Title": "欧莱雅漂粉",
+        "ProductType": "美发",
+        "Unit": "筒",
+        "Spec": "500g"
+      },
+      {
+        "Code": "C00006",
+        "Title": "易发色",
+        "ProductType": "美发",
+        "Unit": "包"
+      },
+      {
+        "Code": "C00009",
+        "Title": "丝泉发膜",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "C00010",
+        "Title": "丝泉精华素",
+        "ProductType": "美发",
+        "Unit": "支",
+        "Spec": "10ml"
+      },
+      {
+        "Code": "C00011",
+        "Title": "强化护理剂",
+        "ProductType": "美发",
+        "Unit": "支",
+        "Spec": "10ml"
+      },
+      {
+        "Code": "C00014",
+        "Title": "劲力多姿（果酸）烫发水",
+        "ProductType": "美发",
+        "Unit": "盒",
+        "Spec": "100ml*2"
+      },
+      {
+        "Code": "C00015",
+        "Title": "活力营养烫发水（DV2）",
+        "ProductType": "美发",
+        "Unit": "盒",
+        "Spec": "100ml*2"
+      },
+      {
+        "Code": "C00016",
+        "Title": "染后营养护发膜（200ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "200ml"
+      },
+      {
+        "Code": "C00017",
+        "Title": "染后营养护发膜（500ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "C00018",
+        "Title": "顺柔润丝发膜（500ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "C00019",
+        "Title": "顺柔润丝发膜（200ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "200ml"
+      },
+      {
+        "Code": "C00020",
+        "Title": "致臻修护发膜（500ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "C00021",
+        "Title": "致臻修护发膜（200ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "200ml"
+      },
+      {
+        "Code": "C00022",
+        "Title": "盈致幻卷发膜（200ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "200ml"
+      },
+      {
+        "Code": "C00023",
+        "Title": "盈致幻卷发膜（500ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "C00025",
+        "Title": "发芯锁护乳（12ML）",
+        "ProductType": "美发",
+        "Unit": "支",
+        "Spec": "12ml"
+      },
+      {
+        "Code": "C00026",
+        "Title": "加强色",
+        "ProductType": "美发",
+        "Unit": "支",
+        "Spec": "50ml"
+      },
+      {
+        "Code": "C00027",
+        "Title": "染后强化修护洗发水(250ML)",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "250ml"
+      },
+      {
+        "Code": "C00028",
+        "Title": "增量定型液（数码烫）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "1000ml"
+      },
+      {
+        "Code": "C00029",
+        "Title": "顺柔润丝/盈波亮泽洗护(大瓶)",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "1500ml/750ml"
+      },
+      {
+        "Code": "C00030",
+        "Title": "顺柔润丝洗护(小瓶)",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "250ml/150ml"
+      },
+      {
+        "Code": "C00031",
+        "Title": "顺柔润泽精华液",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "50ml"
+      },
+      {
+        "Code": "C00032",
+        "Title": "前卫塑发丝胶（150ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "150ML"
+      },
+      {
+        "Code": "C00033",
+        "Title": "前卫塑发膏（50ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "50ml"
+      },
+      {
+        "Code": "C00034",
+        "Title": "雅碟喷发胶（500ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "C00035",
+        "Title": "劲致塑发者哩（200ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "200ml"
+      },
+      {
+        "Code": "C00036",
+        "Title": "特丽雅晶亮发膏（50ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "50ml"
+      },
+      {
+        "Code": "C00037",
+        "Title": "丰泽润发摩丝（250ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "250ml"
+      },
+      {
+        "Code": "C00038",
+        "Title": "顺柔润发乳液（150ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "150ml"
+      },
+      {
+        "Code": "C00039",
+        "Title": "倍顺润发凝露（50ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "50ml"
+      },
+      {
+        "Code": "C00040",
+        "Title": "前卫亮发定型啫哩/150ML",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "150ml"
+      },
+      {
+        "Code": "C00041",
+        "Title": "前卫塑发泥（50ML）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "50ml"
+      },
+      {
+        "Code": "C00042",
+        "Title": "探索顺直定型液（中和剂）",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "1000ml"
+      },
+      {
+        "Code": "M00001",
+        "Title": "绚丽电发水",
+        "ProductType": "美发",
+        "Unit": "盒",
+        "Spec": "100ml"
+      },
+      {
+        "Code": "M00002",
+        "Title": "柔丽电发水",
+        "ProductType": "美发",
+        "Unit": "盒",
+        "Spec": "100ml"
+      },
+      {
+        "Code": "M00003",
+        "Title": "完美电发水",
+        "ProductType": "美发",
+        "Unit": "盒",
+        "Spec": "100ml"
+      },
+      {
+        "Code": "M00004",
+        "Title": "全能电发水",
+        "ProductType": "美发",
+        "Unit": "盒",
+        "Spec": "100ml"
+      },
+      {
+        "Code": "M000051",
+        "Title": "宝丽电发水",
+        "ProductType": "美发",
+        "Unit": "盒",
+        "Spec": "100ml"
+      },
+      {
+        "Code": "M00006",
+        "Title": "丝蛋白电发水",
+        "ProductType": "美发",
+        "Unit": "盒",
+        "Spec": "100ml"
+      },
+      {
+        "Code": "M00139",
+        "Title": "菲灵柔离子",
+        "ProductType": "美发",
+        "Unit": "套",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "M00140",
+        "Title": "菲灵负离子",
+        "ProductType": "美发",
+        "Unit": "套",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "M00010",
+        "Title": "多功能局油(500ML)",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "M00011",
+        "Title": "滋养再生局油(500ML)",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "M00012",
+        "Title": "3%双氧",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "1000ml"
+      },
+      {
+        "Code": "M00013",
+        "Title": "6%双氧",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "1000ml"
+      },
+      {
+        "Code": "M00014",
+        "Title": "9%双氧",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "1000ml"
+      },
+      {
+        "Code": "M00015",
+        "Title": "12%双氧",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "1000ml"
+      },
+      {
+        "Code": "G00006",
+        "Title": "弗西亚酸碱平衡烫",
+        "ProductType": "美发",
+        "Unit": "盒",
+        "Spec": "60盒/箱"
+      },
+      {
+        "Code": "G00069",
+        "Title": "古凡尼活性烫发水",
+        "ProductType": "美发",
+        "Unit": "套",
+        "Spec": "120ML*2"
+      },
+      {
+        "Code": "G00037",
+        "Title": "色之良水离子",
+        "ProductType": "美发",
+        "Unit": "套",
+        "Spec": "12套/箱"
+      },
+      {
+        "Code": "G00052",
+        "Title": "黄金钠米离子",
+        "ProductType": "美发",
+        "Unit": "套",
+        "Spec": "10套/箱"
+      },
+      {
+        "Code": "G00007",
+        "Title": "弗西亚水养倒膜",
+        "ProductType": "美发",
+        "Unit": "瓶"
+      },
+      {
+        "Code": "G00062",
+        "Title": "丰彩营养生化烫",
+        "ProductType": "美发",
+        "Unit": "套",
+        "Spec": "120ML*2"
+      },
+      {
+        "Code": "G00005",
+        "Title": "深层护理倒膜",
+        "ProductType": "美发",
+        "Unit": "套"
+      },
+      {
+        "Code": "G00009",
+        "Title": "清漾毛鳞片(简装)",
+        "ProductType": "美发",
+        "Unit": "瓶"
+      },
+      {
+        "Code": "G00010",
+        "Title": "清漾啫喱水",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "40瓶/箱"
+      },
+      {
+        "Code": "G00051",
+        "Title": "人参发尾油",
+        "ProductType": "美发",
+        "Unit": "瓶"
+      },
+      {
+        "Code": "G00050",
+        "Title": "喷发油",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "48瓶/箱"
+      },
+      {
+        "Code": "G00055",
+        "Title": "摩丝",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "48瓶/箱"
+      },
+      {
+        "Code": "A00008",
+        "Title": "红色活肤养颜晚霜",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "20g"
+      },
+      {
+        "Code": "A00007",
+        "Title": "红色生物蛋白再生霜",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "50g"
+      },
+      {
+        "Code": "A00010",
+        "Title": "红色增白净",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "20ml"
+      },
+      {
+        "Code": "A00012",
+        "Title": "红色生肌液",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "40ml"
+      },
+      {
+        "Code": "A00013",
+        "Title": "红色桃花营养液",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "40ml"
+      },
+      {
+        "Code": "A00014",
+        "Title": "红色再生抗皱眼霜",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "20g"
+      },
+      {
+        "Code": "A00015",
+        "Title": "深层增白净",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "20ml"
+      },
+      {
+        "Code": "A00016",
+        "Title": "红色保湿精华液",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "40ml"
+      },
+      {
+        "Code": "A00018",
+        "Title": "红色脱敏霜",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "20g"
+      },
+      {
+        "Code": "A00019",
+        "Title": "红色祛斑霜(白)",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "20g"
+      },
+      {
+        "Code": "A00020",
+        "Title": "红色毛孔细化素",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "40ml"
+      },
+      {
+        "Code": "A00021",
+        "Title": "红色活能养颜修复乳",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "40ml"
+      },
+      {
+        "Code": "A00023",
+        "Title": "深层活肤按摩膏",
+        "ProductType": "美容",
+        "Unit": "支",
+        "Spec": "100g"
+      },
+      {
+        "Code": "A00024",
+        "Title": "活化极品洁面乳",
+        "ProductType": "美容",
+        "Unit": "支",
+        "Spec": "80g"
+      },
+      {
+        "Code": "A00025",
+        "Title": "生肌膏",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "20g"
+      },
+      {
+        "Code": "A00026",
+        "Title": "祛红营养素",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "20ml"
+      },
+      {
+        "Code": "A00027",
+        "Title": "维生素晶莹露（绿）",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "30ml"
+      },
+      {
+        "Code": "A00028",
+        "Title": "维生素晶莹露（黄）",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "30ml"
+      },
+      {
+        "Code": "A00029",
+        "Title": "维生素晶莹露（紫）",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "30ml"
+      },
+      {
+        "Code": "A00030",
+        "Title": "保湿美白隔离霜",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "30g"
+      },
+      {
+        "Code": "A00031",
+        "Title": "平疣霜",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "20g"
+      },
+      {
+        "Code": "A00032",
+        "Title": "护手霜",
+        "ProductType": "美容",
+        "Unit": "支",
+        "Spec": "80g"
+      },
+      {
+        "Code": "A00033",
+        "Title": "足底按摩膏",
+        "ProductType": "美容",
+        "Unit": "瓶"
+      },
+      {
+        "Code": "A00034",
+        "Title": "康美胶囊",
+        "ProductType": "美容",
+        "Unit": "盒",
+        "Spec": "160粒"
+      },
+      {
+        "Code": "A00035",
+        "Title": "康美宝胶囊",
+        "ProductType": "美容",
+        "Unit": "盒",
+        "Spec": "160粒"
+      },
+      {
+        "Code": "A00041",
+        "Title": "祛屑洗发水2000ml",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "2000ml"
+      },
+      {
+        "Code": "A00042",
+        "Title": "二合一洗发水2000ml",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "2000ml"
+      },
+      {
+        "Code": "A00043",
+        "Title": "防脱洗发水2000ml",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "2000ml"
+      },
+      {
+        "Code": "A00044",
+        "Title": "文峰护发素2000ml",
+        "ProductType": "美发",
+        "Unit": "瓶",
+        "Spec": "2000ml"
+      },
+      {
+        "Code": "B00016",
+        "Title": "绣眉弯刀片",
+        "ProductType": "美容",
+        "Unit": "片"
+      },
+      {
+        "Code": "B00029",
+        "Title": "蛋白开穴产品",
+        "ProductType": "美容",
+        "Unit": "套"
+      },
+      {
+        "Code": "B00030",
+        "Title": "蛋白针",
+        "ProductType": "美容",
+        "Unit": "根"
+      },
+      {
+        "Code": "B00031",
+        "Title": "蛋白线",
+        "ProductType": "美容",
+        "Unit": "根"
+      },
+      {
+        "Code": "B00032",
+        "Title": "钻石纤维素",
+        "ProductType": "美容",
+        "Unit": "瓶"
+      },
+      {
+        "Code": "A00046",
+        "Title": "塑身精华",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "A00045",
+        "Title": "瘦脸精华",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "500ml"
+      },
+      {
+        "Code": "D00001",
+        "Title": "玫瑰精油",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "5ml"
+      },
+      {
+        "Code": "D00002",
+        "Title": "洋甘菊精油",
+        "ProductType": "美容",
+        "Unit": "瓶",
+        "Spec": "5ml"
+      }
+    ]
+}

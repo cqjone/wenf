@@ -1,0 +1,127 @@
+{
+    "temp": [
+      {
+        "TempNo": "000001",           //模板编号
+        "TempName": "光棍节促销",     //模板名称
+        "Content": [				  //内容
+			{"FileNo":"1",//文件序号
+            "FileName":"a.jpg",//文件名称
+            "ShowTime":"20"//显示时间
+            },
+			{"FileNo":"2","FileName":"s.jpg","ShowTime":"54"},
+			{"FileNo":"3","FileName":"d.jpg","ShowTime":"24"},
+			{"FileNo":"4","FileName":"f.jpg","ShowTime":"22"},
+			{"FileNo":"5","FileName":"g.jpg","ShowTime":"34"}
+        ],
+        "stores":[//门店集合
+            // {"StoreName":"迪士尼店",//门店名称
+            // "District":"上海",//门店所在地区
+            // "AreaID":"1"//所在地区代号
+            // },
+            // {"StoreName":"祁连山路店","District":"上海","AreaID":"1"},
+            // {"StoreName":"马陆店","District":"江苏","AreaID":"6"}
+        ]
+      }
+      ,{
+        "TempNo": "000002",           //模板编号
+        "TempName": "十一促销",     //模板名称
+        "Content": [				  //内容
+			{"FileNo":"1","FileName":"h.jpg","ShowTime":"24"},
+			{"FileNo":"2","FileName":"j.jpg","ShowTime":"14"},
+			{"FileNo":"3","FileName":"k.jpg","ShowTime":"41"},
+			{"FileNo":"4","FileName":"l.jpg","ShowTime":"21"}
+        ],
+        "stores":[//门店集合
+            // {"StoreName":"假定店","District":"北京","AreaID":"2"},
+            // {"StoreName":"安亭店","District":"山东","AreaID":"3"},
+            // {"StoreName":"闵行店","District":"山东","AreaID":"3"}
+        ]
+      }
+	  ,{
+        "TempNo": "000003",           //模板编号
+        "TempName": "春节促销",     //模板名称
+        "Content": [				  //内容
+			{"FileNo":"1","FileName":"q.jpg","ShowTime":"65"},
+			{"FileNo":"2","FileName":"w.jpg","ShowTime":"72"},
+			{"FileNo":"3","FileName":"e.jpg","ShowTime":"54"}
+        ],
+        "stores":[//门店集合
+            // {"StoreName":"桃浦店","District":"上海","AreaID":"1"},
+            // {"StoreName":"花桥店","District":"江苏","AreaID":"6"},
+            // {"StoreName":"人民广场店","District":"北京","AreaID":"2"}
+        ]
+      }
+	  ,{
+        "TempNo": "000004",           //模板编号
+        "TempName": "元宵节促销",     //模板名称
+        "Content": [				  //内容
+			{"FileNo":"1","FileName":"r.jpg","ShowTime":"52"},
+			{"FileNo":"2","FileName":"y.jpg","ShowTime":"62"},
+			{"FileNo":"3","FileName":"u.jpg","ShowTime":"46"},
+			{"FileNo":"4","FileName":"i.jpg","ShowTime":"32"}
+        ],
+        "stores":[//门店集合
+            // {"StoreName":"祁连山路店","District":"上海","AreaID":"1"}
+        ]
+      }
+	  ,{
+        "TempNo": "000005",           //模板编号
+        "TempName": "妇女节促销",     //模板名称
+        "Content": [				  //内容
+			{"FileNo":"1","FileName":"o.jpg","ShowTime":"72"},
+			{"FileNo":"2","FileName":"p.jpg","ShowTime":"53"},
+			{"FileNo":"3","FileName":"z.jpg","ShowTime":"82"}
+        ],
+        "stores":[//门店集合
+            // {"StoreName":"迪士尼店","District":"上海","AreaID":"1"}
+        ]
+      }
+	  ,{
+        "TempNo": "000006",           //模板编号
+        "TempName": "愚人节促销",     //模板名称
+        "Content": [				  //内容
+			{"FileNo":"1","FileName":"x.jpg","ShowTime":"24"},
+			{"FileNo":"2","FileName":"c.jpg","ShowTime":"53"},
+			{"FileNo":"3","FileName":"v.jpg","ShowTime":"16"},
+			{"FileNo":"4","FileName":"b.jpg","ShowTime":"15"},
+			{"FileNo":"5","FileName":"n.jpg","ShowTime":"81"},
+			{"FileNo":"6","FileName":"m.jpg","ShowTime":"17"}
+        ],
+        "stores":[//门店集合
+            // {"StoreName":"复旦店","District":"厦门","AreaID":"5"},
+            // {"StoreName":"徐汇店","District":"山东","AreaID":"3"}
+        ]
+      }
+	  ,{
+        "TempNo": "000007",           //模板编号
+        "TempName": "端午节促销",     //模板名称
+        "Content": [				  //内容
+			{"FileNo":"1","FileName":"1.jpg","ShowTime":"33"},
+			{"FileNo":"2","FileName":"2.jpg","ShowTime":"36"},
+			{"FileNo":"3","FileName":"3.jpg","ShowTime":"61"},
+			{"FileNo":"4","FileName":"4.jpg","ShowTime":"43"}
+        ],
+        "stores":[//门店集合
+            // {"StoreName":"迪士尼店","District":"上海","AreaID":"1"},
+            // {"StoreName":"祁连山路店","District":"上海","AreaID":"1"},
+            // {"StoreName":"徐汇店","District":"山东","AreaID":"3"}
+        ]
+      }
+	  ,{
+        "TempNo": "000008",           //模板编号
+        "TempName": "儿童节促销",     //模板名称
+        "Content": [				  //内容
+			{"FileNo":"1","FileName":"5.jpg","ShowTime":"60"},
+			{"FileNo":"2","FileName":"6.jpg","ShowTime":"14"},
+			{"FileNo":"3","FileName":"7.jpg","ShowTime":"14"},
+			{"FileNo":"4","FileName":"8.jpg","ShowTime":"32"},
+			{"FileNo":"5","FileName":"9.jpg","ShowTime":"63"}
+        ],
+        "stores":[//门店集合
+            // {"StoreName":"迪士尼店","District":"上海","AreaID":"1"},
+            // {"StoreName":"祁连山路店","District":"上海","AreaID":"1"},
+            // {"StoreName":"徐汇店","District":"山东","AreaID":"3"}
+        ]
+      }
+    ]
+}
